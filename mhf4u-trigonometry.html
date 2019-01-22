@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600|Montserrat:600|Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<title>Trigonometry | Page Theorem</title>
+</head>
+<body>
+	<header>
+		<nav id = "main-menu">
+			<ul id="primary-nav">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">Grade 12</a>
+					<ul class="secondary-nav">
+						<li><a href="/">MHF4U</a>
+							<ul class="tertiary-nav">
+								<li><a href="./mhf4u-logarithms.html">Logarithms</a></li>
+								<li><a href="./mhf4u-absolute-values.html">Absolute Values</a></li>
+								<li><a href="./mhf4u-polynomials.html">Polynomials</a></li>
+								<li><a href="./mhf4u-rational-functions.html">Rational Functions</a></li>
+								<li><a href="./mhf4u-inequalities.html">Inequalities</a></li>
+								<li><a href="./mhf4u-trigonometry.html">Trigonometry</a></li>
+							</ul>
+						</li>
+					</ul>
+				<li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<button onclick="topFunction()" id="scroll-button" title="Go to top">
+			<i class="fas fa-chevron-circle-up"></i>
+		</button>
+		<div id = "toc">
+			<ul>
+				<li><a href="#i">Trigonometric Ratios</a></li>
+				<li><a href="#ii">Special Angles</a></li>
+				<li><a href="#iii">Radians & Degrees</a></li>
+				<li><a href="#iv">Functions</a></li>
+				<li><a href="#v">Trigonometry Identities</a></li>
+				<ul>
+					<li><a href="#va">Pythagorean Identities</a></li>
+					<li><a href="#vb">Reciprocal Identities</a></li>
+					<li><a href="#vc">Half-Angle Identities</a></li>
+					<li><a href="#vd">Double-Angle Identities</a></li>
+					<!--<li><a href="#ve">Others</a></li>-->
+				</ul>
+				<!--<li><a href="#vi">Practice</a></li>-->
+			</ul>
+		</div>
+		<div id="content">
+			<h1>Trigonometry</h1>
+			<h3 id = "i">1. Trigonometric Ratios</h3>
+			<h3 id="ii">2. Special Angles</h3>
+			<p>
+				Special Angles are angles that when used with trigonometry ratios have exact values instead of a trail of decimals.
+			</p>
+			<table class="demo">
+				<tr>
+					<th>θ</th>
+					<th>0°</th>
+					<th>30°</th>
+					<th>45°</th>
+					<th>60°</th>
+					<th>90°</th>
+					<th>180°</th>
+				</tr>
+				<tr>
+					<td>sin</td>
+					<td>0</td>
+					<td>
+						<div class="frac">
+					    <span>1</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">2</span>
+		    			</div>
+					</td>
+					<td>
+						<div class="frac">
+					    <span>√2</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">2</span>
+		    			</div>
+		    			or
+		    			<div class="frac">
+					    <span>1</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">√2</span>
+						</div>
+					</td>
+					<td>
+						<div class="frac">
+					    <span>√3</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">2</span>
+		    			</div>
+					</td>
+					<td>1</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>cos</td>
+					<td>1</td>
+					<td>
+						<div class="frac">
+					    <span>√3</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">2</span>
+		    			</div>
+					</td>
+					<td>
+						<div class="frac">
+					    <span>√2</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">2</span>
+		    			</div>
+		    			or
+		    			<div class="frac">
+					    <span>1</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">√2</span>
+						</div>
+					</td>
+					<td>1/2</td>
+					<td>0</td>
+					<td>-1</td>
+				</tr>
+				<tr>
+					<td>tan</td>
+					<td>0</td>
+					<td>
+						<div class="frac">
+					    <span>√3</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">3</span>
+		    			</div>
+		    			or
+		    			<div class="frac">
+					    <span>1</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">√3</span>
+					</td>
+					<td>1</td>
+					<td>√3</td>
+					<td>1</td>
+					<td>N/A</td>
+				</tr>
+			</table>
+			<h3 id="iii">3. Radians & Degrees</h3>
+			<p>
+				Radians are another way to measure angles. Half a circle (180°) = πradians, so a full circle (360°) = 2π.
+			</p>
+			<p>
+				<table>
+					<tr>
+						<td>
+							<div class="frac">
+							    <span>π</span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">2</span>
+							</div>
+							= 90°
+						</td>
+						<td>
+							<div class="frac">
+							    <span>π</span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">3</span>
+							</div>
+							= 60°
+						</td>
+						<td>
+							<div class="frac">
+							    <span>π</span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">4</span>
+							</div>
+							= 45°
+						</td>
+						<td>
+							<div class="frac">
+							    <span>π</span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">6</span>
+							</div>
+							= 30°
+						</td>
+					</tr>
+				</table>
+			</p>
+			<p>
+				To convert radians to degrees:
+				<div class="equation">D = R ×
+					<div class="frac">
+					    <span>π</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">180°</span>
+					</div>
+				</div>
+
+				To convert degrees to radians:
+				<div class="equation">R = D ×
+					<div class="frac">
+					    <span>180°</span>
+					    <span class="symbol">/</span>
+					    <span class="bottom">π</span>
+					</div>
+				</div>
+			</p>
+			<h3 id="iv">4. Functions</h3>
+			<p>	
+			<div class="equation">
+				<i>f(x)</i> = <span style="color: red; font-style: italic;">a</span>sin(<span style="color: green; font-style:italic;">k</span><i>x</i> - <span style="color: orange; font-style: italic;">p</span>) + <span style="color:purple; font-style: italic;">d</span>
+			</div>
+			<br/>
+			<i style="color:red">a</i> = <b>Vertical stretch</b>. This number is also the amplitude of the function. If <i>a</i> < 0, then the graph is reflected on the <i>x</i>-axis.<br/>
+			<i style="color: green">k</i> = <b>Horizontal stretch/compression</b>. You use k to find the period of a function, which is calculated by 360/k if in degrees or 2πk in radians. If <i>k</i> < 0, then the graph is reflected on the <i>y</i>-axis.<br/>
+			<i style="color: orange;">p</i> = <b>Horizontal translation</b>. Also called phase shift.<br/>
+			<i style="color: purple">d</i> = <b>Vertical translation</b>. To determine the horizontal axis (centre) of the wave, do: 
+			<div class="frac">
+		    	<span>lowest point + highest point</span>
+		    	<span class="symbol">/</span>
+				  <span class="bottom">2</span>   
+			</div>
+			</p>
+			<p>
+				<table>
+					<tr>
+						<td>
+						<div class="equation"> <i>f(x)</i> = sinx</div>
+						<img src="./resources/images/sinx.png"/>
+						</td>
+						<td>
+						<div class="equation"> <i>f(x)</i> = sin(<span style="color:green">-</span>x)</div>
+						<img src="./resources/images/sin-x.png"/>
+						</td>
+						<td>
+						<div class="equation"> <i>f(x)</i> = <span style="color:red;">-</span>sinx</div>
+							<img src="./resources/images/-sinx.png"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="equation"> <i>f(x)</i> = <span style="color:red;">2</span>sinx</div>
+						<img src="./resources/images/2sinx.png"/>
+						</td>
+						<td>
+						<div class="equation"> <i>f(x)</i> = <span style="color:red">0.5</span>sinx</div>
+						<img src="./resources/images/halfsinx.png"/>
+						</td>
+						<td>
+						<div class="equation"> <i>f(x)</i> = sin(<span style="color:green">2</span>x)</div>
+							<img src="./resources/images/sin2x.png"/>
+						</td>
+					</tr>
+				</table>
+			</p>
+			<h3 id="v">5. Trigonometric Identities</h3>
+			<p>
+				Trigonometric identities are equations where they are <i>always</i> true regardless of the value of θ.
+			</p>
+			<h4 id="va">5.1. Pythagorean Identities</h4>
+			<p>
+				<div class="equation">
+					<table style="text-align: left;">
+						<tr>
+							<td>sinθ =
+								<div class="frac">
+								    <span>opposite</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">hypotenuse</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>cosθ = 
+								<div class="frac">
+									<span>adjacent</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">hypotenuse</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>tanθ = 
+								<div class="frac">
+								    <span>opposite</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">adjacent</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</p>
+			<p>
+				When on a graph, we can use x, y, and r.
+				<div class="equation">
+					<table>
+						<tr>
+							<td>sinθ =
+								<div class="frac" style="font-style:italic">
+								    <span>y</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">r</span>
+								</div>
+							</td>
+							<td>cosθ = 
+								<div class="frac" style="font-style:italic">
+								    <span>x</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">r</span>
+								</div>
+							</td>
+							<td>tanθ = 
+								<div class="frac" style="font-style:italic">
+								    <span>y</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">r</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</p>
+			<h4 id="vb">5.2. Reciprocal Identities</h4>
+			<p>
+				<div class="equation">
+					<table>
+						<tr>
+							<td>cscθ =
+								<div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">sinθ</span>
+								</div>
+							</td>
+							<td>secθ = 
+								<div class="frac">
+									<span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">cosθ</span>
+								</div>
+							</td>
+							<td>cotθ = 
+								<div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">tanθ</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</p>
+			<h4 id="vc">5.3. Half-Angle Identities</h4>
+			<p>
+				sin(A+B) = sinAcosB + cosAsinB
+				<br/>
+				sin(A-B) = sinAcosB - cosAsinB
+				<br/>
+				cos(A+B) = cosAcosB - sinAsinB
+				<br/>
+				cos(A-B) = cosAcosB + sinAsinB
+				<br/>
+				tan(A+B) = (tanA+tanB)/(1- tanAtanB)
+			</p>
+			<h4 id="vd">5.4. Double-Angle Identities</h4>
+			<p>
+				sin2θ = 2sinθcosθ<br/>
+				cos2θ = cos<sup>2</sup>θ - sin<sup>2</sup>θ or 2cos<sup>2</sup>θ-1 or 1-2cos<sup>2</sup>θ<br/>
+				tan2θ = 2tanθ / 1 - tan<sup>2</sup>θ
+			</p>
+			<!--<h4 id="ve">5.5. Others</h4>
+			<h3 id="vi">6. Practice</h3>
+			1. Convert the following to degrees.<br/>
+			<table class="questions">
+				<tr>
+					<td>
+					a) <div class="frac">
+		    			<span>3π</span>
+		    			<span class="symbol">/</span>
+				    	<span class="bottom">4</span>   
+						</div>
+					</td>
+					<td>
+					b)  <div class="frac">
+		    			<span>7π</span>
+		    			<span class="symbol">/</span>
+				    	<span class="bottom">6</span>   
+						</div>
+					</td>
+					<td>
+					c)  <div class="frac">
+		    			<span>π</span>
+		    			<span class="symbol">/</span>
+				    	<span class="bottom">12</span>   
+						</div>
+					</td>
+					<td>
+					d)  <div class="frac">
+		    			<span>8π</span>
+		    			<span class="symbol">/</span>
+				    	<span class="bottom">3</span>   
+						</div>
+					</td>
+					<td>
+					e)  <div class="frac">
+		    			<span>12π</span>
+		    			<span class="symbol">/</span>
+				    	<span class="bottom">21</span>   
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div class="solution">
+				<button class="solution-button"> + Solution</button>
+				<div class="solution-text">
+					<table>
+						<tr>
+							<td> a)
+								<div class="frac">
+					    			<span>3π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+									</div> ×
+									<div class="frac">
+					    			<span>180°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">π</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>540°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4π</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>540°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+								</div><br/>
+								= 135°
+							</td>
+							<td> b)
+								<div class="frac">
+					    			<span>7π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">6</span>   
+									</div> ×
+									<div class="frac">
+					    			<span>180°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">π</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>1260°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">6π</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>1260°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">6</span>   
+								</div><br/>
+								= 210°
+							</td>
+							<td> c)
+								<div class="frac">
+					    			<span>3π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+									</div> ×
+									<div class="frac">
+					    			<span>180°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">π</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>540°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4π</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>540°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+								</div><br/>
+								= 135°
+							</td>
+						</tr>
+						<tr>
+							<td> d)
+								<div class="frac">
+					    			<span>3π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+									</div> ×
+									<div class="frac">
+					    			<span>180°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">π</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>540°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4π</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>540°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+								</div><br/>
+								= 135°
+							</td>
+							<td> e)
+								<div class="frac">
+					    			<span>3π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+									</div> ×
+									<div class="frac">
+					    			<span>180°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">π</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>540°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4π</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>540°</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+								</div><br/>
+								= 135°
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<p style="margin-bottom:0;">2. Convert the following to radians.
+			<table class="questions">
+				<tr>
+					<td>
+					a) 315
+					</td>
+					<td>
+					b) 540
+					</td>
+					<td>
+					c) 30
+					</td>
+					<td>
+					d) 135
+					</td>
+					<td>
+					e) 405
+					</td>
+				</tr>
+			</table></p>
+			<div class="solution">
+				<button class="solution-button"> + Solution</button>
+				<div class="solution-text">
+					<table>
+						<tr>
+							<td> a) 315° ×
+									<div class="frac">
+					    			<span>π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">180°</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>315°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">180°</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>7π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">4</span>   
+								</div><br/>
+							</td>
+							<td> b) 540° ×
+									<div class="frac">
+					    			<span>π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">180°</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>540°π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">180°</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>6π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">3</span>   
+								</div>
+							</td>
+
+							<td> c) 30° ×
+									<div class="frac">
+					    			<span>π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">180°</span>   
+								</div><br/>
+								= 
+								<div class="frac">
+					    			<span>30π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">180°</span>   
+								</div><br/>
+								=
+								<div class="frac">
+					    			<span>π</span>
+					    			<span class="symbol">/</span>
+							    	<span class="bottom">6</span>   
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td> d) 135° ×
+									<div class="frac">
+						    			<span>π</span>
+						    			<span class="symbol">/</span>
+								    	<span class="bottom">180°</span>   
+									</div><br/>
+								= 
+								<div class="frac">
+						    			<span>135°π</span>
+						    			<span class="symbol">/</span>
+								    	<span class="bottom">180°</span>   
+									</div><br/>
+								=
+								<div class="frac">
+						    			<span>3π</span>
+						    			<span class="symbol">/</span>
+								    	<span class="bottom">4</span>   
+								</div>
+							</td>
+							<td> e) 405° ×
+									<div class="frac">
+						    			<span>π</span>
+						    			<span class="symbol">/</span>
+								    	<span class="bottom">180°</span>   
+									</div><br/>
+								= 
+								<div class="frac">
+						    			<span>405°π</span>
+						    			<span class="symbol">/</span>
+								    	<span class="bottom">180°</span>   
+									</div><br/>
+								=
+								<div class="frac">
+						    			<span>9π</span>
+						    			<span class="symbol">/</span>
+								    	<span class="bottom">8</span>   
+								</div>
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<p>
+			3. Prove that cos2θ = 2cos^θ - 1
+			</p>
+			<div class="solution">
+				<button class="solution-button"> + Solution</button>
+				<div class="solution-text">
+					<table class ="answer-guide">
+						<tr>
+							<td>
+							cos2θ = 2cos<sup>2</sup>θ - 1 <br/>
+							= 2cos<sup>2</sup>θ - (cos<sup>2</sup>θ + sin<sup>2</sup>θ) <br/>
+							=2cos<sup>2</sup>θ - cos<sup>2</sup>θ - sin<sup>2</sup>θ <br/>
+							= cos<sup>2</sup>θ - sin<sup>2</sup>θ <br/>
+							= cosθcosθ - sinθsinθ <br/>
+							= cos2θ <br/>
+							</td>
+							<td style="font-style: italic">
+							<br/>
+							Use identity of 1 = cos<sup>2</sup>θ + sin<sup>2</sup>θ <br/>
+							Expand (-) over bracket <br/>
+							Combine 2cos<sup>2</sup>θ - cos<sup>2</sup>θ <br/>
+							Expand square <br/>
+							Simplify. <br/>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<p>
+			4. Solve. <br/>
+			a) sin(45 + 90) <br/>
+			b) cos(30 + 45) <br/>
+			c) sin(175) <br/>
+			d) cos60cos30 - sin60sin30 <br/>
+			e) sin45cos60 - cos45sin60 <br/>
+			</p>
+			<div class="solution">
+				<button class="solution-button"> + Solution</button>
+				<div class="solution-text">
+				<table>
+					<tr>
+						<td>
+							a) sin(45 + 90)<br/>
+							= sin45cos90 + cos45sin90 <br/>
+							= (<div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">√2</span>
+								</div> × 0)
+							+ (<div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">√2</span>
+								</div> × 1)<br/>
+							= <div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">√2</span>
+								</div>
+						</td>
+						<td>
+							b) cos(30 + 45)<br/>
+							= cos30cos45 - sin30sin45 <br/>
+							= (<div class="frac">
+								    <span>√3</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">2</span>
+								</div> 
+							× <div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">√2</span>
+								</div>)
+							+ (<div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">2</span>
+								</div> 
+							× <div class="frac">
+								    <span>1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">√2</span>
+								</div>)<br/>
+							= <div class="frac">
+								    <span>√3 + 1</span>
+								    <span class="symbol">/</span>
+								    <span class="bottom">2√2</span>
+								</div>
+						</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+			<p>
+			5. State the transformations of y = -5sin(x+π2) - 3
+			</p>
+			<div class="solution">
+				<button class="solution-button"> + Solution</button>
+				<div class="solution-text">
+					<i>f</i>(<i class="var">x</i>) = <i>a</i>sin(<i>k</i><i class="var">x</i> - <i>d</i>) + <i>c</i><br/>
+					= -5sin(<i class="var">x</i> + pi/2) - 3<br/>
+					a = -5, so there is a vertical stretch of 5, and a reflection on the x-axis.<br/>
+					k = 1, there is no change here.<br/>
+					p = -pi/2, so there is a phase shift of pi/2 to the left. <br/>
+					d = -3, so there is a vertical translation 3 units down.
+					<img src="./resources/images/trigq5.png"/>
+				</div>
+			</div>
+			-->
+		</div>		
+	</main>
+
+	<footer>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

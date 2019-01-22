@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600|Montserrat:600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<title>Absolute Values | Page Theorem</title>
+</head>
+<body>
+	<header>
+				<nav id = "main-menu">
+			<ul id="primary-nav">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">Grade 12</a>
+					<ul class="secondary-nav">
+						<li><a href="/">MHF4U</a>
+							<ul class="tertiary-nav">
+								<li><a href="./mhf4u-logarithms.html">Logarithms</a></li>
+								<li><a href="./mhf4u-absolute-values.html">Absolute Values</a></li>
+								<li><a href="./mhf4u-polynomials.html">Polynomials</a></li>
+								<li><a href="./mhf4u-rational-functions.html">Rational Functions</a></li>
+								<li><a href="./mhf4u-inequalities.html">Inequalities</a></li>
+								<li><a href="./mhf4u-trigonometry.html">Trigonometry</a></li>
+							</ul>
+						</li>
+					</ul>
+				<li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<button onclick="topFunction()" id="scroll-button" title="Go to top">
+			<i class="fas fa-chevron-circle-up"></i>
+		</button>
+		<div id = "toc">
+			<ul>
+				<li><a href="#1">Absolute vs. Regular</a></li>
+				<li><a href="#2">Calculations</a></li>
+				<!--<li><a href="/">Practice</a></li>-->
+			</ul>
+		</div>
+		<div id="content">
+			<h1>Absolute Values</h1>
+			<h3 id = "1">1. Absolute vs. Regular</h3>
+			<p>Absolute values are numbers that calculate a digit's <b>distance</b> from zero. It tells you whether the digit is 1 unit, 2 unit, or <i class="var">x</i>-number of units away from 0. Because it tells you distance and not amount or direction (i.e. positive or negative, left or right), absolute values are <b> never negative</b>.</p>
+
+			<img src="./resources/images/absoluteline.png" style="width:50%; display:block;margin: auto;"/>
+			<p>For example, in this number line the distance from 0 to 1 and 0 to -1 is both |1|. Both points are |1| unit away from 0, regardless of direction.</p>
+			<p>Absolute values are those within two bars; |<i class="var">x</i>| is an example of an absolute value.</p>
+
+			<h3 id="2">2. Calculations</h3>
+			<p>
+			The bars of absolute values are <i>not</i> parentheses. The final result of any expression within the two || is first switched to positive and then can be integrated with the rest of the equation.</p>
+
+			<div class="example">
+				<div class="example-header">Example</div>
+				Solve -|-x|.<br/>
+				<p>Remember that || are <i>not</i> parentheses; you can't have it so -|-<i class="var">x</i>| = |<i class="var">x</i>| because you cancelled out the two negatives. First you do the equation in the lines, then solve. <br/><br/>
+				|-<i class="var">x</i>| = +<i class="var">x</i>. <br/>
+				-|-<i class="var">x</i>|<br/>
+				= -(<i class="var">x</i>) <br/>
+				= -<i class="var">x</i>
+				</p>
+			</div>
+			<!--<h3 id="3">3. Practice</h3>-->
+		</div>		
+	</main>
+	<footer>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

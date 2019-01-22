@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600|Montserrat:600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<title>Polynomials | Page Theorem</title>
+</head>
+<body>
+	<header>
+		<nav id = "main-menu">
+			<ul id="primary-nav">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">Grade 12</a>
+					<ul class="secondary-nav">
+						<li><a href="/">MHF4U</a>
+							<ul class="tertiary-nav">
+								<li><a href="./mhf4u-logarithms.html">Logarithms</a></li>
+								<li><a href="./mhf4u-absolute-values.html">Absolute Values</a></li>
+								<li><a href="./mhf4u-polynomials.html">Polynomials</a></li>
+								<li><a href="./mhf4u-dividing-polynomials.html">Dividing Polynomials</a></li>
+								<li><a href="./mhf4u-rational-functions.html">Rational Functions</a></li>
+								<li><a href="./mhf4u-inequalities.html">Inequalities</a></li>
+								<li><a href="./mhf4u-trigonometry.html">Trigonometry</a></li>
+							</ul>
+						</li>
+					</ul>
+				<li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id = "toc">
+			<ul>
+				<li><a href="#1">What is A Polynomial Function</a></li>
+				<li><a href="#2">Characteristics</a></li>
+				<ul>
+					<li><a href="#2a">Odd/Even</a></li>
+					<li><a href="#2b">Odd/Even Degree</a></li>
+					<li><a href="#2c">End Behaviours</a></li>
+					<li><a href="#2d">Zeros</a></li>
+				</ul>
+				<!--<li><a href="/">Graphing</a></li>
+				<li><a href="/">Practice</a></li>-->
+
+			</ul>
+		</div>
+		<div id="content">
+			<h1>Polynomials</h1>
+			<h3 id = "1">1. What is a Polynomial?</h3>
+			<p>A polynomial normally follows the following pattern:</p>
+			<div class="equation"> <i>f(x)</i> = 
+				<span style="color:red">a</span><i>x</i><sup style="color: blue">n</sup> + <span style="color:red">b</span><i>x</i><sup style="color: blue">n - 1</sup> + <span style="color:red">c</span><i>x</i><sup style="color: blue">n - 2</sup>... + z
+			</div>
+			<p>Where:
+				<ul>
+					<li><b style="color:red">a, b, c...</b> = Coefficients of terms</li>
+					<li><b style="color: blue">n, n -1...</b> = Power of terms</li>
+				</ul>
+			</p>
+			<h3 id="2">2. Characteristics</h3>
+			<h4 id="2a">2.1. Odd/Even</h4>
+			<p>Odd functions are functions where, if you rotated it by 180 degrees from the origin, it’s appearance would be the same. This is known as rotational symmetry.</p>
+			<p>Even functions are functions that, when reflected on the y-axis, are symmetrical.<br/>
+			You can also calculate it with formulas.</p>
+
+			<p>If <i class="var">f(x) = f(-x)</i>, then it is even.<br/>
+			If <i class="var">f(-x) = -f(-x)</i>, then it is odd.</p>
+
+			<h4 id="2b">2.2. Odd/Even Degree</h4>
+			<p>The degree of a function is what it's highest power is. For the equation <i class="var">x</i><sup>2</sup> - 3<i class="var">x</i> + 5, the degree is 2. The degree, specifically if it is odd or even, can tell us about the end behaviour of the function.</p>
+
+			<h4 id="2c">2.3. End Behaviour</h4>
+			<P>End behaviours are the way a graph's <i class="var">y</i>-value acts as <i class="var">x</i> approaches +∞ (positive infinity) and -∞ (negative infinity).</p>
+			<p>They are written as:</p>
+			<div class="equation" style="font-style: italic"> as x → ±∞, y → ±∞</div>
+			<div style="font-style:italic;text-align: center;font-size:12px">As x approaches negative/positive infinity, y approaches negative/positive infinity</div><br/>
+
+			<p>...with the signs of infinity depending on the respective graph. If it is a standard exponential graph of f(x) = x<sup>2</sup>, for example.</p>
+			<img src="./resources/images/x2.png" style="width:50%; display:block; margin:auto"/>
+			<p>Both ends go up (so y goes towards positive infinity) as x becomes greater (towards positive infinity) and smaller (negative infinity). Therefore we can write its end behaviour as:</p>
+			<div class="equation" style="font-style: italic"> as x → +∞, y → -∞</div>
+			<div style="font-style:italic;text-align: center;font-size:12px">As x approaches positive infinity, y approaches positive infinity</div><br/>
+			<div class="equation" style="font-style: italic"> as x → -∞, y → +∞</div>
+			<div style="font-style:italic;text-align: center;font-size:12px">As x approaches negative infinity, y approaches positive infinity</div><br/>
+			<p>If the degree of a polynomial is even, the end behaviour for both ends are the same. If the degree of a polynomial is odd, the end behaviours go in opposite directions.</p>
+			<h4 id="2d">2.4. Zeros</h4>
+			<p>The x-intercepts of a graph can be solved by factoring the polynomial and solving for <i clas="var">x</i>; these are points whre the graph intersects the x-axis and y = 0.</p>
+			<p>The y-intercepts of a graph are when x = 0 and the graph crosses the y-axis. To solve, set x = 0 in the polynomial and solve for y.</p>
+			<!--<h3 id="3">3. Graphing</h3>
+			<h3 id="4">4. Practice</h3>-->
+		</div>		
+	</main>
+
+	<footer>
+	</footer>
+</body>
+</html>

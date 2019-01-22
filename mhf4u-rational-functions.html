@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600|Montserrat:600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<title>Rational Functions | Page Theorem</title>
+</head>
+<body>
+	<header>
+				<nav id = "main-menu">
+			<ul id="primary-nav">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">Grade 12</a>
+					<ul class="secondary-nav">
+						<li><a href="/">MHF4U</a>
+							<ul class="tertiary-nav">
+								<li><a href="./mhf4u-logarithms.html">Logarithms</a></li>
+								<li><a href="./mhf4u-absolute-values.html">Absolute Values</a></li>
+								<li><a href="./mhf4u-polynomials.html">Polynomials</a></li>
+								<li><a href="./mhf4u-rational-functions.html">Rational Functions</a></li>
+								<li><a href="./mhf4u-inequalities.html">Inequalities</a></li>
+								<li><a href="./mhf4u-trigonometry.html">Trigonometry</a></li>
+							</ul>
+						</li>
+					</ul>
+				<li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<button onclick="topFunction()" id="scroll-button" title="Go to top">
+			<i class="fas fa-chevron-circle-up"></i>
+		</button>
+		<div id = "toc">
+			<ul>
+				<li><a href="#1">What are Rational Functions?</a></li>
+				<li><a href="#2">Characteristics</a></li>
+				<ul>
+					<li><a href="#2a">Vertical Asymptotes</a></li>
+					<li><a href="#2b">Horizontal Asymptotes</a></li>
+					<li><a href="#2c">Oblique Asymptotes</a></li>
+					<li><a href="#2d">Holes</a></li>
+					<li><a href="#2e">Zeros</a></li>
+				</ul>
+				<!--<li><a href="#3">Graphing</a></li>
+				<li><a href="#4">Practice</a></li>-->
+			</ul>
+		</div>
+		<div id="content">
+			<h1>Rational Functions</h1>
+			<h3 id = "1">1. What are Rational Functions?</h3>
+			<p>Rational functions are functions that are the quotient, or ratio, of two polynomial functions.</p>
+			<h3 id="2">2. Characteristics</h3>
+			<h4 id="2a">2.1. Vertical Asymptotes</h4>
+			<p>Vertical asymptotes are values of <i class="var">x</i> that results in an <b>undefined point</b> of a rational function. Values of <i class="var">x</i> are unable to cross these values.<br/><br/>
+			<img src="./resources/images/vertasymp.png" style="width: 50%; display: block; margin: auto;"/> <br/>This graph has a vertical asymptote at <i class="var">x</i> = 0, because it is unable to have an <i class="var">x</i>-value at 0.
+			Undefined functions are those that have 0 as their denominator. They can be solved by finding for all values of <i class="var">x</i> in the denominator.</p>
+			<div class="example">
+				<div class="example-header">Example</div>
+				What are the vertical asymptotes of
+				<div class="frac">
+				    <span>5</span>
+				    <span class="symbol">/</span>
+				    <span class="bottom"><i class="var">x</i><sup>2</sup> - 6<i class="var">x</i> + 5</span> 
+				</div>
+				?<br/>
+				If we're finding the vertical asymptotes, we must solve for all ><i class="var">x</i> values in the denominator. We can do so by factoring <i class="var">x</i><sup>2</sup> - 6<i class="var">x</i> + 5.<br/><br/>
+				<i class="var">x</i><sup>2</sup> - 6<i class="var">x</i> + 5<br/>
+				= (x - 5)(x - 1)<br/><br/>
+
+
+				Our vertical asymptotes are x = 1, 5.
+			</div>
+			<h4 id="2b">2.2. Horizontal Asymptotes</h4>
+			<p>Just like vertical asymptotes, horizontal asymptotes are points where <i class="var">y</i>-values are unable to cross.</p>
+			<img src="./resources/images/horzasymp.png" style="width: 50%; display: block; margin: auto;"/>
+			<p>This graph has a horizontal asymptote at <i class="var">y</i> = 4.</p>
+			<p> If the degree of the numerator polynomial is lower than the degree of the denominator polynomial, the horizontal asymptote is at <i class="var">y</i> = 0. If the degree is the same in both the numerator and the denominator polynomial, to find the horizontal asymptote you divide the coefficients of the terms with that degree. If the degree of the numerator is higher than the one in the denominator there is no horizontal asymptote.</p>
+			
+			<div class="example">
+				<div class="example-header">Example</div>
+				What are the horizontal asymptotes of
+				<div class="frac">
+				    <span>2x<sup>2</sup></span>
+				    <span class="symbol">/</span>
+				    <span class="bottom"><i class="var">x</i><sup>2</sup> - 3<i class="var">x</i></span> 
+				</div>
+				?<br/>
+				First we need to check how we're going to find the vertical asymptotes.<br/>
+				The highest-power term in the numerator is 2x<sup>2</sup> and in the denominator it's x<sup>2</sup>. As they're the same power, we need to divide their coefficients.<br/><br/>
+				<div class="frac">
+				    <span>2<sup></sup></span>
+				    <span class="symbol">/</span>
+				    <span class="bottom">1</span> 
+				</div>
+				= 2<br/><br/>
+
+
+				Our horizontal asymptote is y = 2.
+			</div>
+
+			<h4 id="2c">2.3. Oblique Asymptotes</h4>
+			<p>Oblique asymptotes, also known as <b>slanted asymptotes</b>, are asymptotes represented by a linear line of <i class="var">y</i> = m<i class="var">x</i> + b.</p>
+			<img src="./resources/images/obasymp.png" style="width: 50%; display: block; margin: auto;"/>
+			<p>This graph has an oblique asymptote at <i class="var">y</i> = <i class="var">x</i> - 3.</p>
+			<p>If the numerator polynomial degree is greater than the one of the denominator, an oblique asymptote exists. To find oblique asymptotes, you need to divide the two polynomials. The polynomial answer you get (not the remainder) is your oblique asymptote.</p>
+			<h4 id="2d">2.4. Holes</h4> 
+			<p>Holes in a function are points where both <i class="var">x</i> and <i class="var">y</i> can't be that value. They are <b>not</b> asymptotes.</p>
+			<img src="./resources/images/hole.png" style="width: 50%; display: block; margin: auto;"/>
+			<p>This graph has a hole at <i class="var">x</i> = 5.</p>
+			<p>To tell if your function will have a hole, check for values of <i class="var">x</i> that make zero in both the denominator and the numerator.</p>
+			<div class="example">
+				<div class="example-header">Example</div>
+				Does the rational function
+				<div class="frac">
+				    <span><i class="var">x</i><sup>2</sup> - 3<i class="var">x</i> + 2</span>
+				    <span class="symbol">/</span>
+				    <span class="bottom"><i class="var">x</i> - 1</span> 
+				</div>
+				have a hole?<br/>
+				To find <i class="var">x</i>, we factor the polynomials in both the numerator and the denominator.<br/><br/>
+
+				<i class="var">x</i><sup>2</sup> - 3<i class="var">x</i> + 2<br/>
+				= (<i class="var">x</i> - 2)(<i class="var">x</i> - 1)<br/>
+				<i class="var">x</i> = 1, 2 for the numerator. <br/><br/>
+			
+				(<i class="var">x</i> - 1)<br/>
+				<i class="var">x</i> = 1 for the denominator. <br/><br/>
+
+				(<i class="var">x</i> - 1) is a common factor for both the numerator and the denominator, so we have a hole at <i class="var">x</i> = 1.
+			</div>
+			<h4 id="2e">2.5. Zeros</h4>
+			<p>Zeros, also called <b>roots</b>, of rational functions are where <i class="var">y</i> = 0 and the graph intersects the <i class="var">x</i>-axis. To solve for roots set the numerator to 0 and solve for <i class="var">x</i>.</p>
+			<p>Y-intercepts are when x = 0 and the graph crosses the <i class="var">y</i>-axis. To solve for a graph's <i class="var">y</i>-intercept, substitute 0 for <i class="var">x</i> in the function and solve for <i class="var">y</i>.
+			<!--<h3 id="3">3. Graphing</h3>
+			<p>To sketch graphs of rational functions, you need to do the following steps:</p>
+			<ul>
+				<li>Find any existing asymptotes and holes</li>
+				<li>Determine all intercepts.</li>
+				<li>Plot intercepts, draw guidelines for asymptotes, and draw out the shape.</li>
+			</ul>
+			<h3 id="4">4. Practice</h3>
+			1. Determine if there are any horizontal, vertical, or oblique asymptotes in the following functions.
+			<div class="solution">
+				<button class="solution-button">+ Solution</button>
+				<div class="solution-text">
+				</div>
+			</div><br/>
+			2.
+			<div class="solution">
+				<button class="solution-button">+ Solution</button>
+				<div class="solution-text">
+				</div>
+			</div><br/>
+			3.
+			<div class="solution">
+				<button class="solution-button">+ Solution</button>
+				<div class="solution-text">
+				</div>
+			</div><br/>
+			4.
+			<div class="solution">
+				<button class="solution-button">+ Solution</button>
+				<div class="solution-text">
+				</div>
+			</div><br/>
+			5.
+			<div class="solution">
+				<button class="solution-button">+ Solution</button>
+				<div class="solution-text">
+				</div>
+			</div><br/>
+		-->
+		</div>		
+	</main>
+	<footer>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./resources/css/stylesheet.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600|Montserrat:600" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<title>Inequalities | Page Theorem</title>
+</head>
+<body>
+	<header>
+		<nav id = "main-menu">
+			<ul id="primary-nav">
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">Grade 12</a>
+					<ul class="secondary-nav">
+						<li><a href="/">MHF4U</a>
+							<ul class="tertiary-nav">
+								<li><a href="./mhf4u-logarithms.html">Logarithms</a></li>
+								<li><a href="./mhf4u-absolute-values.html">Absolute Values</a></li>
+								<li><a href="./mhf4u-polynomials.html">Polynomials</a></li>
+								<li><a href="./mhf4u-rational-functions.html">Rational Functions</a></li>
+								<li><a href="./mhf4u-inequalities.html">Inequalities</a></li>
+								<li><a href="./mhf4u-trigonometry.html">Trigonometry</a></li>
+							</ul>
+						</li>
+					</ul>
+				<li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<button onclick="topFunction()" id="scroll-button" title="Go to top">
+			<i class="fas fa-chevron-circle-up"></i>
+		</button>
+		<div id = "toc">
+			<ul>
+				<li><a href="#1">Signs</a></li>
+				<li><a href="#2">Representing Intervals</a></li>
+				<ul>
+					<li><a href="#2a">Interval Notation</a></li>
+					<li><a href="#2b">Set Notation</a></li>
+					<li><a href="#2c">Number Line</a></li>
+				</ul>
+				<li><a href="#3">Solving Inequalities</a></li>
+				<li><a href="#4">Polynomial Inequalities</a></li>
+				<li><a href="#5">Rational Inequalities</a></li>
+				<!--<li><a href="#6">Practice</a></li>-->
+			</ul>
+		</div>
+		<div id="content">
+			<h1>Inequalities</h1>
+			<h3 id = "1">1. Signs</h3>
+			<table class="demo">
+				<tr>
+					<td>
+						<<br/>
+						less/greater than
+					</td>
+					<td>
+						a > b <br/>
+						<i>a is <b>greater</b> than b</i> /
+						<i> b is <b>less</b> than a</i>
+					</td>
+				</tr>
+				<tr>
+					<td> 
+						≥ <br/>
+						less/greater than <br/>or equal to
+					</td>
+					<td>
+						b ≥ a <br/>
+						<i>b is <b>less </b>than or <b>equal to</b> a</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						⇔ <br/>
+						the same
+					</td>
+					<td>
+						a ⇔ b <br/>
+						<i>a is <b>equal to</b> b</i>
+					</td>
+				</tr>
+				<tr>
+
+					<td>
+						≠ <br/>
+						not equal to
+					</td>
+					<td>
+						a ≠ b <br/>
+						<i>a is <b>not equal</b> than b</i>
+					</td>
+				</tr>
+			</table>
+			<h3 id = "2">2. Representing Intervals</h3>
+			<h4 id ="2a">2.1. Interval Notation</h4>
+			<p>
+				Interval notation is written as (<i>a</i>, <i>b</i>) where <i>a</i> and <i>b</i> represent the range of numbers <i class="var">x</i> can be that makes the equation true. For example, in the equation 2<i class="var">x</i> > 4, this is only true when <i class="var">x</i> > 2. Therefore the interval notation solution is  (2, ∞), read as “from 2 to ∞,” or <i class="var">x</i> > 2.</p>
+
+			<p>
+				The brackets also have meaning. Round brackets (a, b)  mean that that <i class="var">x</i> can’t equal a or b. In the interval notation for the equation above, <i class="var">x</i> ≠ 2, because 2(2) > 4 is incorrect. 2(2) is equal to 4 but it is not greater than 4, which is what the equation is asking for. So the interval notation of (2, ∞) is written with both round brackets on each end. ∞ can never be reached, and therefore is never included.</p>
+			<p>
+				Square brackets mean <i class="var">x</i> is able to equal that number. If the equation was changed to 2<i class="var">x</i> ≥ 4, then 2 can be included in the interval, as the criteria is greater than or equal to 4. 2(2) satisfies the equals criteria, and so it is included. The interval notation is then [2, ∞).</p>
+			<h4 id ="2b">2.2. Set Notation</h4>
+			<p>
+				Set notation is more similar to the way you write the domains of functions. Going back to the 2<i class="var">x</i> > 4 equation, we could write it in set notation form as:
+				<div class="equation"> { <i class="var">x</i> | <i class="var">x</i> > 2}</div></p>
+
+			<h4 id ="2c">2.3 Number Lines</h4>
+			<p>
+				When doing number lines, you draw lines that highlight the intervals where your equation is made true. Blank circles (o) are used to show that the end of that interval is not included and filled circles (●) represent that they are included.
+				</p>
+				<table>
+					<tr>
+						<td><div class="equation">(-5, 3)</div>
+							<img src="./resources/images/nl-5-3.png"/>
+						</td>
+						<td><div class="equation">(-4, 2]</div>
+							<img src="./resources/images/nl-4-2.png"/>
+						</td>
+					</tr>
+				</table>
+			<h3 id="3">3. Solving Inequalities</h3>
+			<p>
+			Solving inequalities is very similar to solving regular equations. The biggest difference is, however, is that when you are dividing or multiplying both sides by a negative number, you must reverse the direction of the inequality sign.</p>
+			<div class="example">
+				<div class="example-header">Example</div><br/>
+			<table class ="example-guide">
+				<tr>
+					<td>-2<i class="var">x</i> > 4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>= <i class="var">x</i> > -2</td>
+					<td>Remember that the logic behind “moving over” numbers is essentially you dividing -2 on one side and -2 on the other)</td>
+				</tr>
+				<tr>
+					<td>= <i class="var">x</i> < -2</td>
+					<td>Reverse direction.</td>
+				</tr>
+			</table>
+
+			</div>
+			<h3 id="4">4. Polynomial Inequalities</h3>
+			<p>
+			The factors are (<i class="var">x</i> - 3)(<i class="var">x</i> - 7)(<i class="var">x</i> + 5). Solving for <i class="var">x</i> gives us 3, 7, and -5. Therefore our intervals to check are (∞, -5), (-5, 3), (3, 7) and (7, ∞).</p>
+			<p>
+			We can check these intervals by picking a number within it, substitute <i class="var">x</i> for that number, and see if the resulting answer is positive or negative. We don’t have to solve the issue necessarily, we can just take the sign and use the rules of multiplying negative and positive numbers to infer a result.</p>
+
+			<div class="example">
+				<div class="example-header">Example</div>
+				<p>Let’s pick a number within the (∞, -5) interval. <i class="var">x</i> = -7</p>
+				<p>
+				  (<i class="var">x</i> - 7)(<i class="var">x</i> + 5)(<i class="var">x</i> - 3)<br/>
+				= (-7 - 7)(-7 + 5)(-7 - 3) <br/>
+				= (-14)(-2)(-10) <br/>
+				= (-)(-)(-) <br/>
+				= (-) <br/>
+
+				The solutions in each bracket are negative, so we just replace the whole factor with a negative sign. Negative multiplied by negative is positive, and positive multiplied by negative is negative, so (-) is our final answer<br/>
+				</p>
+				<p>
+				Because the solution of a number within the interval (∞, - 5) is negative (so below zero), then this interval is not part of the equation solution.
+				</p>
+				<p>
+				We try again for the rest of the intervals. For interval (-5, 3):</p>
+				<p>
+				Let <i class="var">x</i> = 1 <br/>
+				(<i class="var">x</i> - 7)(<i class="var">x</i> + 5)(<i class="var">x</i> - 3)<br/>
+				= (1 - 7)(1 + 5)(1 - 3) <br/>
+				= (-)(+)(-) <br/>
+				= (+) <br/>
+
+				(-5, 3) is part of the solution.
+
+				</p>
+				<p>
+				For interval (3, 7): <br/>
+				Let <i class="var">x</i> = 5 <br/>
+				(<i class="var">x</i> - 7)(<i class="var">x</i> + 5)(<i class="var">x</i> - 3)<br/>
+				= (5 - 7)(5 + 5)(5 - 3) <br/>
+				= (-)(+)(+) <br/>
+				= (-) <br/>
+
+				(3, 7) is not part of the solution.
+				</p>
+				<p>
+				For interval (7, ∞):
+				Let <i class="var">x</i> = 10 <br/>
+				(<i class="var">x</i> - 7)(<i class="var">x</i> + 5)(<i class="var">x</i> - 3)<br/>
+				= (10 - 7)(10 + 5)(10 - 3) <br/>
+				= (+)(+)(+) <br/>
+				= (+) <br/>
+
+				(7, ∞) is part of the solution.
+				</p>
+				<p>The solutions to <i class="var">x</i><sup>3</sup> - 5<i class="var">x</i><sup>2</sup> - 29<i class="var">x</i> + 105 > 0 are (-5, 3) and (7, ∞).</p>
+			</div>
+			<h3 id="5">5. Rational Inequalities</h3>
+			<p>
+				When solving rational inequalities such as 
+				<div class="frac">
+				    <span>2<i class="var">x</i><sup>2</sup></span>
+				    <span class="symbol">/</span>
+				    <span class="bottom">2<i class="var">x</i></span>  
+				</div>
+				 > 
+				<div class="frac">
+				    <span>12<i class="var">x</i></span>
+				    <span class="symbol">/</span>
+				    <span class="bottom">15</span>  
+				</div>, you may want to cross-multiply to solve like you normally would. 
+				<b>You must avoid doing this with rational inequalities</b><br/>
+				This is because when you multiply 12<i class="var">x</i> by 2<i class="var">x</i> (as you do when cross-multiplying) you don’t know if <i class="var">x</i> is a negative number, which can change the whole equation.
+			</p>
+			<p>
+				Instead, move one rational to the other side and solve as usual.<br/>
+			</p>
+			<div class="example">
+				<div class="example-header">Example</div>
+				<table class="example-guide">
+					<tr>
+						<td>
+							<div class="frac">
+							    <span>2<i class="var">x</i><sup>2</sup></span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">2<i class="var">x</i><sup></sup></span>  
+							</div>
+							 - 
+							<div class="frac">
+							    <span>12<i class="var">x</i></span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">15</span>  
+							</div>
+							> 0
+						</td>
+						<td>
+							Move one ratio to the other side.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="frac">
+							    <span>15(2<i class="var">x</i><sup>2</sup>) - 2<i class="var">x</i>(12<i class="var">x</i>)</span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">(2<i class="var">x</i>)(15)</span>  
+							</div>
+							> 0
+						</td>
+						<td>
+							Change both to a common denominator.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="frac">
+							    <span>30x<sup>2</sup> - 24<i class="var">x</i><sup>2</sup></span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">30<i class="var">x</i></span>  
+							</div> > 0
+						</td>
+						<td>
+							Simplify.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="frac">
+							    <span>6<i class="var">x</i><sup>2</sup></span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">30<i class="var">x</i></span>  
+							</div>
+							> 0
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="frac">
+							    <span>6<i class="var">x</i></span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">30</span>  
+							</div> > 0
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="frac">
+								<span><i class="var">x</i></span>
+							    <span class="symbol">/</span>
+							    <span class="bottom">5</span>  
+							</div> > 0
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<i class="var">x</i> > 0(5)
+						</td>
+						<td>
+							Isolate for <i class="var">x</i>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<i class="var">x</i> > 0<br/>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+				
+				In interval notation, this solution is (0, ∞).
+			</div>
+			<!--<h3 id="6">6. Practice</h3>-->
+
+		</div>		
+	</main>
+
+	<footer>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/script2.js"></script>
+</body>
+</html>
